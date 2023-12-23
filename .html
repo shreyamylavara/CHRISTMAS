@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+    }
+    #santa {
+      font-size: 24px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    #heart {
+      font-size: 36px;
+      color: pink;
+      cursor: pointer;
+    }
+    #candycanes {
+      display: none;
+      background-color: pink;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function showSanta() {
+      alert("Merry Christmas Dani!");
+    }
+
+    function showCandyCanes() {
+      document.getElementById('candycanes').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div id="santa" onclick="showSanta()">🎅 Merry Christmas Dani! 🎅</div>
+  <div id="heart" onclick="showCandyCanes()">❤️</div>
+  <div id="candycanes">
+    <p>See you on December 30th!</p>
+  </div>
+</body>
+</html>
